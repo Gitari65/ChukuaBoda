@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverRegistrationActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver Registration"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="32dp"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_first_name"
+        android:layout_marginTop="16dp"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_last_name"
+        android:layout_marginTop="16dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_email"
+        android:layout_marginTop="16dp"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_phone"
+        android:layout_marginTop="16dp"
+        android:hint="City"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_vehicle_make_model"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_city"
+        android:layout_marginTop="16dp"
+        android:hint="Vehicle Make and Model"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_license_plate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_vehicle_make_model"
+        android:layout_marginTop="16dp"
+        android:hint="Vehicle License Plate Number"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_license_plate"
+        android:layout_marginTop="32dp"
+        android:text="Register" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverRegistrationActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_title"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Fill in Vehicle Details then click Save"/>
+    <EditText
+        android:id="@+id/et_vehicle_make_model"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/txt_title"
+        android:hint="Vehicle Make and Model"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_license_plate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_vehicle_make_model"
+        android:layout_marginTop="16dp"
+        android:hint="Vehicle License Plate Number"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bikepic"
+        android:layout_below="@id/et_license_plate"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Bike Picture"/>
+
+    <ImageView
+        android:id="@+id/imageViewBikepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/bikepic"
+        android:background="@drawable/addphoto" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewBikepic"
+        android:layout_marginTop="32dp"
+        android:text="save" />
+
+</RelativeLayout>
